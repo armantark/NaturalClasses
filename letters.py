@@ -6,5 +6,7 @@ letters = {
               classes.BILAB,
               classes.LABIAL,
               classes.VOICELESS,
+              classes.ANTERIOR,
+
               ])
 }
