@@ -10,7 +10,8 @@ letters = {
         classes.VOICELESS,
         classes.ANTERIOR,
         classes.TENUIS,
-        classes.PLOSIVE
+        classes.PLOSIVE,
+        classes.NONCON
         },
     "b": {
         classes.CONS,
@@ -20,7 +21,8 @@ letters = {
         classes.LABIAL,
         classes.VOICED,
         classes.ANTERIOR,
-        classes.PLOSIVE
+        classes.PLOSIVE,
+        classes.NONCON
     },
     "pʰ": {
         classes.CONS,
@@ -31,7 +33,8 @@ letters = {
         classes.VOICELESS,
         classes.ANTERIOR,
         classes.ASPIRATED,
-        classes.PLOSIVE
+        classes.PLOSIVE,
+        classes.NONCON
     },
     "bʰ": {
         classes.CONS,
@@ -42,7 +45,8 @@ letters = {
         classes.VOICED,
         classes.ANTERIOR,
         classes.ASPIRATED,
-        classes.PLOSIVE
+        classes.PLOSIVE,
+        classes.NONCON
     },
     "p'": {
         classes.CONS,
@@ -58,7 +62,7 @@ letters = {
     "m": {
         classes.CONS,
         classes.NASAL,
-        classes.BILABIAL,
+        classes.BILAB,
         classes.LABIAL,
         classes.VOICED,
         classes.ANTERIOR,
@@ -67,20 +71,39 @@ letters = {
     "ʙ": {
         classes.CONS,
         classes.TRILL,
-        classes.BILABIAL,
+        classes.BILAB,
         classes.LABIAL,
         classes.VOICED,
         classes.ANTERIOR,
         classes.VIBRANT
     },
     "ɸ": {
-
+        classes.CONS,
+        classes.FRIC,
+        classes.BILAB,
+        classes.VOICELESS,
+        classes.LABIAL,
+        classes.ANTERIOR,
+        classes.CON,
+        classes.OBST
     },
     "β": {
-
+        classes.CONS,
+        classes.FRIC,
+        classes.BILAB,
+        classes.VOICED,
+        classes.LABIAL,
+        classes.ANTERIOR,
+        classes.CON,
+        classes.OBST
     },
     "w": {
-
+        classes.CONS,
+        classes.VOICED,
+        classes.LABIAL,
+        classes.BILAB,
+        classes.VELAR,
+        classes.
     },
     "ʍ": {
 

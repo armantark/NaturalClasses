@@ -41,7 +41,6 @@ class classes(Enum):
     BACK = "back"
     HIGH = "high"
     NEARHIGH = "near-high"
-    NEAR
     CLOSE = "close"
     CLOSEMID = "close-mid"
     OPENMID = "open-mid"
@@ -53,6 +52,7 @@ class classes(Enum):
     ANTERIOR = "anterior"
     STRIDENT = "strident"
     DELAY = "delayed release"
+    OBST = "obstruent"
     NONSON = "non-sonorant"
     UNDEFINED = "undefined"
     DORSAL = "dorsal"
