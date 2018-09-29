@@ -70,6 +70,7 @@ letters = {
     },
     "ʙ": {
         classes.CONS,
+        classes.ORAL,
         classes.TRILL,
         classes.BILAB,
         classes.LABIAL,
@@ -79,6 +80,7 @@ letters = {
     },
     "ɸ": {
         classes.CONS,
+        classes.ORAL,
         classes.FRIC,
         classes.BILAB,
         classes.VOICELESS,
@@ -89,6 +91,7 @@ letters = {
     },
     "β": {
         classes.CONS,
+        classes.ORAL,
         classes.FRIC,
         classes.BILAB,
         classes.VOICED,
@@ -99,11 +102,12 @@ letters = {
     },
     "w": {
         classes.CONS,
+        classes.ORAL,
         classes.VOICED,
         classes.LABIAL,
         classes.BILAB,
         classes.VELAR,
-        classes.
+        classes.ANTERIOR
     },
     "ʍ": {
 
