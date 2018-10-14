@@ -1,113 +1,118 @@
-from classes import classes
+from classes import *
 
 letters = {
     "p": {
-        classes.CONS,
-        classes.ORAL,
-        classes.STOP,
-        classes.BILAB,
-        classes.LABIAL,
-        classes.VOICELESS,
-        classes.ANTERIOR,
-        classes.TENUIS,
-        classes.PLOSIVE,
-        classes.NONCON
+        CONS,
+        ORAL,
+        STOP,
+        BILAB,
+        LABIAL,
+        VOICELESS,
+        ANTERIOR,
+        TENUIS,
+        PLOSIVE,
+        NONCON
         },
     "b": {
-        classes.CONS,
-        classes.ORAL,
-        classes.STOP,
-        classes.BILAB,
-        classes.LABIAL,
-        classes.VOICED,
-        classes.ANTERIOR,
-        classes.PLOSIVE,
-        classes.NONCON
+        CONS,
+        ORAL,
+        STOP,
+        BILAB,
+        LABIAL,
+        VOICED,
+        ANTERIOR,
+        PLOSIVE,
+        NONCON
     },
     "pʰ": {
-        classes.CONS,
-        classes.ORAL,
-        classes.STOP,
-        classes.BILAB,
-        classes.LABIAL,
-        classes.VOICELESS,
-        classes.ANTERIOR,
-        classes.ASPIRATED,
-        classes.PLOSIVE,
-        classes.NONCON
+        CONS,
+        ORAL,
+        STOP,
+        BILAB,
+        LABIAL,
+        VOICELESS,
+        ANTERIOR,
+        ASP,
+        PLOSIVE,
+        NONCON
     },
     "bʰ": {
-        classes.CONS,
-        classes.ORAL,
-        classes.STOP,
-        classes.BILAB,
-        classes.LABIAL,
-        classes.VOICED,
-        classes.ANTERIOR,
-        classes.ASPIRATED,
-        classes.PLOSIVE,
-        classes.NONCON
+        CONS,
+        ORAL,
+        STOP,
+        BILAB,
+        LABIAL,
+        VOICED,
+        ANTERIOR,
+        ASP,
+        PLOSIVE,
+        NONCON
     },
     "p'": {
-        classes.CONS,
-        classes.ORAL,
-        classes.BILAB,
-        classes.LABIAL,
-        classes.VOICELESS,
-        classes.ANTERIOR,
-        classes.EJECT,
-        classes.NONPULM,
-        classes.PLOSIVE
+        CONS,
+        ORAL,
+        BILAB,
+        LABIAL,
+        VOICELESS,
+        ANTERIOR,
+        EJECT,
+        NONPULM,
+        PLOSIVE
     },
     "m": {
-        classes.CONS,
-        classes.NASAL,
-        classes.BILAB,
-        classes.LABIAL,
-        classes.VOICED,
-        classes.ANTERIOR,
-        classes.STOP
+        CONS,
+        NASAL,
+        BILAB,
+        LABIAL,
+        VOICED,
+        ANTERIOR,
+        STOP
     },
     "ʙ": {
-        classes.CONS,
-        classes.ORAL,
-        classes.TRILL,
-        classes.BILAB,
-        classes.LABIAL,
-        classes.VOICED,
-        classes.ANTERIOR,
-        classes.VIBRANT
+        CONS,
+        ORAL,
+        TRILL,
+        BILAB,
+        LABIAL,
+        VOICED,
+        ANTERIOR,
+        VIBRANT
     },
     "ɸ": {
-        classes.CONS,
-        classes.ORAL,
-        classes.FRIC,
-        classes.BILAB,
-        classes.VOICELESS,
-        classes.LABIAL,
-        classes.ANTERIOR,
-        classes.CON,
-        classes.OBST
+        CONS,
+        ORAL,
+        FRIC,
+        BILAB,
+        VOICELESS,
+        LABIAL,
+        ANTERIOR,
+        CON,
+        OBST
     },
     "β": {
-        classes.CONS,
-        classes.ORAL,
-        classes.FRIC,
-        classes.BILAB,
-        classes.VOICED,
-        classes.LABIAL,
-        classes.ANTERIOR,
-        classes.CON,
-        classes.OBST
+        CONS,
+        ORAL,
+        FRIC,
+        BILAB,
+        VOICED,
+        LABIAL,
+        ANTERIOR,
+        CON,
+        OBST
     },
     "w": {
-        classes.CONS,
-        classes.ORAL,
-        classes.VOICED,
-        classes.LABIAL,
-        classes.BILAB,
-        classes.VELAR,
-        classes.ANTERIOR
+        CONS,
+        ORAL,
+        VOICED,
+        LABIAL,
+        BILAB,
+        VELAR,
+        ANTERIOR,
+        APPROX,
+        SEMI,
+        CON,
+        VOCOID,
+
     },
     "ʍ": {
 
@@ -119,16 +124,38 @@ letters = {
 
     },
     "f": {
-
+        CONS,
+        VOICELESS,
+        NONSON,
+        LABIAL,
+        LABDENT,
+        ANTERIOR,
+        CON,
+        STRIDENT,
+        OBST
     },
     "v": {
-
+        CONS,
+        VOICED,
+        NONSON,
+        LABDENT,
+        LABIAL,
+        ANTERIOR,
+        CON,
+        STRIDENT,
+        OBST
     },
     "ʋ": {
 
     },
     "t": {
-
+        CONS,
+        PLOSIVE,
+        STOP,
+        VOICELESS,
+        ALV,
+        CORONAL,
+        ANTERIOR
     },
     "d": {
 
@@ -239,19 +266,58 @@ letters = {
 
     },
     "k": {
-
+        CONS,
+        STOP,
+        PLOSIVE,
+        DORSAL,
+        NONCON,
+        VOICELESS,
+        NONSON,
+        VELAR
     },
     "g": {
-
+        CONS,
+        STOP,
+        PLOSIVE,
+        DORSAL,
+        NONCON,
+        VOICED,
+        NONSON,
+        VELAR
     },
     "k'": {
-
+        CONS,
+        STOP,
+        PLOSIVE,
+        DORSAL,
+        NONCON,
+        VOICELESS,
+        NONSON,
+        VELAR,
+        NONPULM,
+        EJECT
     },
     "kʰ": {
-
+        CONS,
+        STOP,
+        PLOSIVE,
+        DORSAL,
+        NONCON,
+        VOICELESS,
+        NONSON,
+        VELAR,
+        ASP
     },
     "gʰ": {
-
+        CONS,
+        STOP,
+        PLOSIVE,
+        DORSAL,
+        NONCON,
+        VOICED,
+        NONSON,
+        VELAR,
+        ASP
     },
     "ŋ": {
 
@@ -293,19 +359,37 @@ letters = {
 
     },
     "ʔ": {
-
+        CONS,
+        VOICELESS,
+        NONSON,
+        UNDEFINED
     },
     "h": {
-
+        CONS,
+        VOICELESS,
+        NONSON,
+        UNDEFINED
     },
     "ɦ": {
 
     },
     "i": {
-
+        VOWEL,
+        FRONT,
+        HIGH,
+        CLOSE,
+        TENSE,
+        SYLLABIC,
+        UNROUND
     },
     "y": {
-
+        VOWEL,
+        FRONT,
+        HIGH,
+        CLOSE,
+        TENSE,
+        SYLLABIC,
+        ROUND
     },
     "ɨ": {
 
@@ -314,25 +398,67 @@ letters = {
 
     },
     "ɯ": {
-
+        VOWEL,
+        BACK,
+        HIGH,
+        CLOSE,
+        TENSE,
+        SYLLABIC,
+        UNROUND
     },
     "u": {
-
+        VOWEL,
+        BACK,
+        HIGH,
+        CLOSE,
+        TENSE,
+        SYLLABIC,
+        ROUND
     },
     "ɪ": {
-
+        VOWEL,
+        FRONT,
+        NEARHIGH,
+        CLOSE,
+        LAX,
+        SYLLABIC,
+        UNROUND
     },
     "ʏ": {
-
+        VOWEL,
+        FRONT,
+        NEARHIGH,
+        CLOSE,
+        LAX,
+        SYLLABIC,
+        ROUND
     },
     "ʊ": {
-
+        VOWEL,
+        BACK,
+        NEARHIGH,
+        CLOSE,
+        LAX,
+        SYLLABIC,
+        ROUND
     },
     "e": {
-
+        VOWEL,
+        FRONT,
+        CLOSEMID,
+        MID,
+        TENSE,
+        SYLLABIC,
+        UNROUND
     },
     "ø": {
-
+        VOWEL,
+        FRONT,
+        CLOSEMID,
+        MID,
+        TENSE,
+        SYLLABIC,
+        ROUND
     },
     "ɘ": {
 
@@ -341,16 +467,39 @@ letters = {
 
     },
     "ɤ": {
-
+        VOWEL,
+        BACK,
+        MID,
+        CLOSEMID,
+        LAX,
+        SYLLABIC,
+        UNROUND
     },
     "o": {
-
+        VOWEL,
+        BACK,
+        MID,
+        CLOSEMID,
+        LAX,
+        SYLLABIC,
+        ROUND
     },
     "ə": {
-
+        VOWEL,
+        CENTRAL,
+        MID,
+        LAX,
+        SYLLABIC,
+        UNROUND
     },
     "ɛ": {
-
+        VOWEL,
+        FRONT,
+        OPENMID,
+        MID,
+        LAX,
+        SYLLABIC,
+        UNROUND
     },
     "œ": {
 
@@ -362,22 +511,49 @@ letters = {
 
     },
     "ʌ": {
-
+        VOWEL,
+        FRONT,
+        OPENMID,
+        MID,
+        LAX,
+        SYLLABIC,
+        UNROUND
     },
     "ɔ": {
-
+        VOWEL,
+        FRONT,
+        OPENMID,
+        MID,
+        LAX,
+        SYLLABIC,
+        ROUND
     },
     "æ": {
-
+        VOWEL,
+        FRONT,
+        LOW,
+        LAX,
+        SYLLABIC,
+        UNROUND,
     },
     "a": {
-
+        VOWEL,
+        FRONT,
+        LOW,
+        TENSE,
+        SYLLABIC,
+        UNROUND
     },
     "ɶ": {
 
     },
     "ɑ": {
-
+        VOWEL,
+        BACK,
+        LOW,
+        TENSE,
+        SYLLABIC,
+        UNROUND
     },
     "ɒ": {
 
@@ -440,10 +616,18 @@ letters = {
 
     },
     "t∫": {
-
+        DELAY,
+        STRIDENT,
+        NONSON,
+        CONS,
+        VOICELESS,
     },
     "dʒ": {
-
+        DELAY,
+        STRIDENT,
+        NONSON,
+        CONS,
+        VOICED,
     },
     "pf": {
 

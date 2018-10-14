@@ -14,5 +14,4 @@ for x in inputLetters:
         except KeyError:
             print("Unidentifiable letter:", x)
             intersection = set([])
-intersection = [x.value for x in intersection]
 print("The letters you input share the following natural classes:\n" + str(intersection))
